@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--bg_03_272x340.png-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="bg_03_272x340.png" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="firstApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <switch width="1" height="100" alignment="left" alpha="0.89999999999999991" value="YES" title="More Info" id="cK0-O4-UTb">
+                            <color key="titleColor" red="0.3659471017" green="0.92546559340000001" blue="0.03789731046" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.94280697599999996" green="0.88319454330000002" blue="0.071681938619999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" height="22.5"/>
+                            <connections>
+                                <action selector="switch:" destination="AgC-eL-Hgc" id="fkX-BN-InO"/>
+                            </connections>
+                        </switch>
+                        <button width="100" height="100" alignment="left" alpha="0.79999999999999982" title="Click me!" id="0iG-Th-HGS">
+                            <color key="titleColor" red="0.89425505049999998" green="0.046881826949999997" blue="0.17224491419999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.95517676770000004" green="0.88154172610000003" blue="0.074870766670000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" height="25.5" width="156"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="9b3-9f-iFo"/>
+                            </connections>
+                        </button>
+                        <label width="100" height="100" alignment="left" textAlignment="center" numberOfLines="2" id="NaQ-VQ-yGZ">
+                            <color key="textColor" red="0.3659471017" green="0.92546559340000001" blue="0.03789731046" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <variation key="device=watch42mm" height="29.5" width="156"/>
+                        </label>
+                        <group width="1" alignment="left" id="CdA-tr-4qU">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="IMG_0218.jpg" id="KAs-Zt-quv">
+                                    <connections>
+                                        <action selector="awake" destination="AgC-eL-Hgc" id="evL-PH-tkF"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" backgroundImage="Photo on 10-15-14 at 1.39 PM #2.jpg" id="E1y-YZ-Q4e">
+                                    <connections>
+                                        <action selector="sleeping" destination="AgC-eL-Hgc" id="Xbh-lw-Kyc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="KAs-Zt-quv"/>
+                                    <exclude reference="E1y-YZ-Q4e"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="KAs-Zt-quv"/>
+                                    <include reference="E1y-YZ-Q4e"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <menu key="menu" id="GeW-Qm-3Wi">
+                        <items>
+                            <menuItem title="Menu Item" id="f66-gu-KAa"/>
+                        </items>
+                    </menu>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="cK0-O4-UTb"/>
+                            <exclude reference="0iG-Th-HGS"/>
+                            <exclude reference="NaQ-VQ-yGZ"/>
+                            <exclude reference="CdA-tr-4qU"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="cK0-O4-UTb"/>
+                            <include reference="0iG-Th-HGS"/>
+                            <include reference="NaQ-VQ-yGZ"/>
+                            <include reference="CdA-tr-4qU"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="buttonPressed" destination="0iG-Th-HGS" id="xLN-Sc-Dec"/>
+                        <outlet property="nameLabel" destination="NaQ-VQ-yGZ" id="v40-Sb-Kxb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="485.58974358974365" y="-8.2820512820512828"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="firstApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

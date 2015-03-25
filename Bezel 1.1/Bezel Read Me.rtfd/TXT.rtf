@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red56\green110\blue255;}
+\margl1440\margr1440\vieww13120\viewh22180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc
+
+\f0\fs24 \cf0 \
+{{\NeXTGraphic Pasted Graphic 1.tiff \width5660 \height8240
+}¬}\
+\
+
+\b\fs38 Bezel Read Me\
+
+\b0\fs24 By Troy Gaul ({\field{\*\fldinst{HYPERLINK "https://twitter.com/tgaul"}}{\fldrslt @tgaul}})\
+Copyright \'a9 2105 InfinitApps LLC\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+Bezel is a free developer tool for Apple\'ae Watch\'99 developers who are running their apps in the iOS Simulator. It shows a window that looks like an Apple Watch and projects the contents of the Simulator\'92s watch window into it so that you can see what your app will look like in the context of a device frame surrounding it (the amount of extra black margin that it will have, etc.).\
+\
+Also, Bezel by default scales the simulator down to a size such that the watch screen should be closer to real-life (it will still be bigger on most desktop/laptop screens due to their DPI, however). This is particularly nice on a Retina display, as in that case, you get a high-resolution version of the watch UI where one retina pixel is showing what one pixel will show on the watch screen (the Simulator, on this kind of screen, is zoomed up to 200%).\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs30 \cf0 Watch Frames\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 \
+Bezel contains a default \'93watch frame\'94 that is an artist\'92s rendering of the Apple Watch. It also supports custom watch frame images. These need to be of an appropriate size and format. Custom frame images can be dropped onto the Bezel window to add them to the list of frames available, and the frame can be changed by right-clicking the window.\
+\
+You can download a folder of watch frame images based on Apple\'92s web pages on apple.com (having been resized to the proper size, masked appropriately, and named so they will be grouped by watch type in the Bezel context menu) from:\
+	{\field{\*\fldinst{HYPERLINK "http://infinitapps.com/files/Apple-Watch-Frames-for-Bezel.zip"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 http://infinitapps.com/files/Apple-Watch-Frames-for-Bezel.zip}}\
+\
+Keep in mind that these additional images are for your own use only (under fair use guidelines).\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs30 \cf0 Using Bezel\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 \
+While using Bezel, you might notice that the cursor jumps to the simulator window while you are clicking and dragging on the watch face. This is the puppet-string mechanism that Bezel uses to send clicks on the watch screen to the simulator showing through. Bezel actually sends clicks over to the simulator window much like a screen-sharing application would.\
+\
+By default, Bezel will update the watch face at a rate of 60 FPS. I\'92ve found that on a relatively recent 13-inch MacBook Pro Retina and a Retina iMac, this has an acceptable amount of CPU use, but you will find that your CPU runs at a differing amount based on how fast it is. There is a submenu in the View menu you can use to alter this frame rate if you find 60 FPS is too demanding for your hardware or you wish to save some on battery life.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs30 \cf0 xScope Mirror\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 \
+While I was working on Bezel, I found a blog post by David Smith about Visualizing Watch Apps that dovetailed nicely with my work on the app:\
+	{\field{\*\fldinst{HYPERLINK "http://david-smith.org/blog/2014/12/01/ailw-visualizing-watch-apps/"}}{\fldrslt http://david-smith.org/blog/2014/12/01/ailw-visualizing-watch-apps/}}\
+\
+In this, he describes how you can put the simulator window onto your phone running xScope Mirror using Iconfactory\'92s great {\field{\*\fldinst{HYPERLINK "http://xscopeapp.com"}}{\fldrslt xScope}} utility on your Mac. This allows viewing the screen at pretty much the size that people expect it to actually be on the real device (assuming it has close to a 326 dpi resolution).\
+\
+You can use this technique with Bezel by targeting the Bezel window instead of the Simulator. If you have Bezel on a Retina display, you can use the normal 1:1 display mode of xScope, or if you\'92re on a non-Retina display, you can use the Bezel View menu to zoom the watch up to 200%, which allows the 1:1 setting in xScope Mirror to render the watch on a Retina screen with full fidelity.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs30 \cf0 System Requirements\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 \
+Bezel requires Mac OS X 10.10 Yosemite. It doesn\'92t work on Mavericks or earlier systems. To run a watch app in the simulator, you will need Xcode 6.2 (beta 1 or later) from Apple\'92s iOS developer program downloads area.\
+}

@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ED0BD631AB8B8580034ABE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0BD621AB8B8580034ABE4 /* AppDelegate.swift */; };
+		5ED0BD651AB8B8580034ABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0BD641AB8B8580034ABE4 /* ViewController.swift */; };
+		5ED0BD681AB8B8580034ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD661AB8B8580034ABE4 /* Main.storyboard */; };
+		5ED0BD6A1AB8B8580034ABE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD691AB8B8580034ABE4 /* Images.xcassets */; };
+		5ED0BD6D1AB8B8580034ABE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD6B1AB8B8580034ABE4 /* LaunchScreen.xib */; };
+		5ED0BD791AB8B8580034ABE4 /* liveContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0BD781AB8B8580034ABE4 /* liveContentTests.swift */; };
+		5ED0BD8C1AB8B8670034ABE4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0BD8B1AB8B8670034ABE4 /* InterfaceController.swift */; };
+		5ED0BD8E1AB8B8670034ABE4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0BD8D1AB8B8670034ABE4 /* NotificationController.swift */; };
+		5ED0BD901AB8B8670034ABE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD8F1AB8B8670034ABE4 /* Images.xcassets */; };
+		5ED0BD941AB8B8670034ABE4 /* liveContent WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD931AB8B8670034ABE4 /* liveContent WatchKit App.app */; };
+		5ED0BD9C1AB8B8670034ABE4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD9A1AB8B8670034ABE4 /* Interface.storyboard */; };
+		5ED0BD9E1AB8B8670034ABE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0BD9D1AB8B8670034ABE4 /* Images.xcassets */; };
+		5ED0BDA11AB8B8670034ABE4 /* liveContent WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5ED0BD861AB8B8670034ABE4 /* liveContent WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ED0BD731AB8B8580034ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ED0BD551AB8B8580034ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ED0BD5C1AB8B8580034ABE4;
+			remoteInfo = liveContent;
+		};
+		5ED0BD951AB8B8670034ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ED0BD551AB8B8580034ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ED0BD921AB8B8670034ABE4;
+			remoteInfo = "liveContent WatchKit App";
+		};
+		5ED0BD9F1AB8B8670034ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ED0BD551AB8B8580034ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ED0BD851AB8B8670034ABE4;
+			remoteInfo = "liveContent WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5ED0BDA81AB8B8670034ABE4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5ED0BDA11AB8B8670034ABE4 /* liveContent WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5ED0BD5D1AB8B8580034ABE4 /* liveContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED0BD611AB8B8580034ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED0BD621AB8B8580034ABE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ED0BD641AB8B8580034ABE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5ED0BD671AB8B8580034ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5ED0BD691AB8B8580034ABE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5ED0BD6C1AB8B8580034ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5ED0BD721AB8B8580034ABE4 /* liveContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = liveContentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED0BD771AB8B8580034ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED0BD781AB8B8580034ABE4 /* liveContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liveContentTests.swift; sourceTree = "<group>"; };
+		5ED0BD861AB8B8670034ABE4 /* liveContent WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "liveContent WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED0BD891AB8B8670034ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED0BD8A1AB8B8670034ABE4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5ED0BD8B1AB8B8670034ABE4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5ED0BD8D1AB8B8670034ABE4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5ED0BD8F1AB8B8670034ABE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5ED0BD931AB8B8670034ABE4 /* liveContent WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "liveContent WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED0BD991AB8B8670034ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED0BD9B1AB8B8670034ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5ED0BD9D1AB8B8670034ABE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ED0BD5A1AB8B8580034ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD6F1AB8B8580034ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD831AB8B8670034ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ED0BD541AB8B8580034ABE4 = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD5F1AB8B8580034ABE4 /* liveContent */,
+				5ED0BD751AB8B8580034ABE4 /* liveContentTests */,
+				5ED0BD871AB8B8670034ABE4 /* liveContent WatchKit Extension */,
+				5ED0BD971AB8B8670034ABE4 /* liveContent WatchKit App */,
+				5ED0BD5E1AB8B8580034ABE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ED0BD5E1AB8B8580034ABE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD5D1AB8B8580034ABE4 /* liveContent.app */,
+				5ED0BD721AB8B8580034ABE4 /* liveContentTests.xctest */,
+				5ED0BD861AB8B8670034ABE4 /* liveContent WatchKit Extension.appex */,
+				5ED0BD931AB8B8670034ABE4 /* liveContent WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ED0BD5F1AB8B8580034ABE4 /* liveContent */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD621AB8B8580034ABE4 /* AppDelegate.swift */,
+				5ED0BD641AB8B8580034ABE4 /* ViewController.swift */,
+				5ED0BD661AB8B8580034ABE4 /* Main.storyboard */,
+				5ED0BD691AB8B8580034ABE4 /* Images.xcassets */,
+				5ED0BD6B1AB8B8580034ABE4 /* LaunchScreen.xib */,
+				5ED0BD601AB8B8580034ABE4 /* Supporting Files */,
+			);
+			path = liveContent;
+			sourceTree = "<group>";
+		};
+		5ED0BD601AB8B8580034ABE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD611AB8B8580034ABE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ED0BD751AB8B8580034ABE4 /* liveContentTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD781AB8B8580034ABE4 /* liveContentTests.swift */,
+				5ED0BD761AB8B8580034ABE4 /* Supporting Files */,
+			);
+			path = liveContentTests;
+			sourceTree = "<group>";
+		};
+		5ED0BD761AB8B8580034ABE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD771AB8B8580034ABE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ED0BD871AB8B8670034ABE4 /* liveContent WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD8B1AB8B8670034ABE4 /* InterfaceController.swift */,
+				5ED0BD8D1AB8B8670034ABE4 /* NotificationController.swift */,
+				5ED0BD8F1AB8B8670034ABE4 /* Images.xcassets */,
+				5ED0BD881AB8B8670034ABE4 /* Supporting Files */,
+			);
+			path = "liveContent WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5ED0BD881AB8B8670034ABE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD891AB8B8670034ABE4 /* Info.plist */,
+				5ED0BD8A1AB8B8670034ABE4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ED0BD971AB8B8670034ABE4 /* liveContent WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD9A1AB8B8670034ABE4 /* Interface.storyboard */,
+				5ED0BD9D1AB8B8670034ABE4 /* Images.xcassets */,
+				5ED0BD981AB8B8670034ABE4 /* Supporting Files */,
+			);
+			path = "liveContent WatchKit App";
+			sourceTree = "<group>";
+		};
+		5ED0BD981AB8B8670034ABE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0BD991AB8B8670034ABE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ED0BD5C1AB8B8580034ABE4 /* liveContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED0BD7C1AB8B8580034ABE4 /* Build configuration list for PBXNativeTarget "liveContent" */;
+			buildPhases = (
+				5ED0BD591AB8B8580034ABE4 /* Sources */,
+				5ED0BD5A1AB8B8580034ABE4 /* Frameworks */,
+				5ED0BD5B1AB8B8580034ABE4 /* Resources */,
+				5ED0BDA81AB8B8670034ABE4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ED0BDA01AB8B8670034ABE4 /* PBXTargetDependency */,
+			);
+			name = liveContent;
+			productName = liveContent;
+			productReference = 5ED0BD5D1AB8B8580034ABE4 /* liveContent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ED0BD711AB8B8580034ABE4 /* liveContentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED0BD7F1AB8B8580034ABE4 /* Build configuration list for PBXNativeTarget "liveContentTests" */;
+			buildPhases = (
+				5ED0BD6E1AB8B8580034ABE4 /* Sources */,
+				5ED0BD6F1AB8B8580034ABE4 /* Frameworks */,
+				5ED0BD701AB8B8580034ABE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ED0BD741AB8B8580034ABE4 /* PBXTargetDependency */,
+			);
+			name = liveContentTests;
+			productName = liveContentTests;
+			productReference = 5ED0BD721AB8B8580034ABE4 /* liveContentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5ED0BD851AB8B8670034ABE4 /* liveContent WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED0BDA51AB8B8670034ABE4 /* Build configuration list for PBXNativeTarget "liveContent WatchKit Extension" */;
+			buildPhases = (
+				5ED0BD821AB8B8670034ABE4 /* Sources */,
+				5ED0BD831AB8B8670034ABE4 /* Frameworks */,
+				5ED0BD841AB8B8670034ABE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ED0BD961AB8B8670034ABE4 /* PBXTargetDependency */,
+			);
+			name = "liveContent WatchKit Extension";
+			productName = "liveContent WatchKit Extension";
+			productReference = 5ED0BD861AB8B8670034ABE4 /* liveContent WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5ED0BD921AB8B8670034ABE4 /* liveContent WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED0BDA21AB8B8670034ABE4 /* Build configuration list for PBXNativeTarget "liveContent WatchKit App" */;
+			buildPhases = (
+				5ED0BD911AB8B8670034ABE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "liveContent WatchKit App";
+			productName = "liveContent WatchKit App";
+			productReference = 5ED0BD931AB8B8670034ABE4 /* liveContent WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ED0BD551AB8B8580034ABE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = com.example;
+				TargetAttributes = {
+					5ED0BD5C1AB8B8580034ABE4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5ED0BD711AB8B8580034ABE4 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5ED0BD5C1AB8B8580034ABE4;
+					};
+					5ED0BD851AB8B8670034ABE4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5ED0BD921AB8B8670034ABE4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 5ED0BD581AB8B8580034ABE4 /* Build configuration list for PBXProject "liveContent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ED0BD541AB8B8580034ABE4;
+			productRefGroup = 5ED0BD5E1AB8B8580034ABE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ED0BD5C1AB8B8580034ABE4 /* liveContent */,
+				5ED0BD711AB8B8580034ABE4 /* liveContentTests */,
+				5ED0BD851AB8B8670034ABE4 /* liveContent WatchKit Extension */,
+				5ED0BD921AB8B8670034ABE4 /* liveContent WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ED0BD5B1AB8B8580034ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD681AB8B8580034ABE4 /* Main.storyboard in Resources */,
+				5ED0BD6D1AB8B8580034ABE4 /* LaunchScreen.xib in Resources */,
+				5ED0BD6A1AB8B8580034ABE4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD701AB8B8580034ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD841AB8B8670034ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD941AB8B8670034ABE4 /* liveContent WatchKit App.app in Resources */,
+				5ED0BD901AB8B8670034ABE4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD911AB8B8670034ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD9C1AB8B8670034ABE4 /* Interface.storyboard in Resources */,
+				5ED0BD9E1AB8B8670034ABE4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ED0BD591AB8B8580034ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD651AB8B8580034ABE4 /* ViewController.swift in Sources */,
+				5ED0BD631AB8B8580034ABE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD6E1AB8B8580034ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD791AB8B8580034ABE4 /* liveContentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED0BD821AB8B8670034ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED0BD8E1AB8B8670034ABE4 /* NotificationController.swift in Sources */,
+				5ED0BD8C1AB8B8670034ABE4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ED0BD741AB8B8580034ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ED0BD5C1AB8B8580034ABE4 /* liveContent */;
+			targetProxy = 5ED0BD731AB8B8580034ABE4 /* PBXContainerItemProxy */;
+		};
+		5ED0BD961AB8B8670034ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ED0BD921AB8B8670034ABE4 /* liveContent WatchKit App */;
+			targetProxy = 5ED0BD951AB8B8670034ABE4 /* PBXContainerItemProxy */;
+		};
+		5ED0BDA01AB8B8670034ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ED0BD851AB8B8670034ABE4 /* liveContent WatchKit Extension */;
+			targetProxy = 5ED0BD9F1AB8B8670034ABE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ED0BD661AB8B8580034ABE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ED0BD671AB8B8580034ABE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5ED0BD6B1AB8B8580034ABE4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ED0BD6C1AB8B8580034ABE4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5ED0BD9A1AB8B8670034ABE4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ED0BD9B1AB8B8670034ABE4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ED0BD7A1AB8B8580034ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5ED0BD7B1AB8B8580034ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ED0BD7D1AB8B8580034ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = liveContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5ED0BD7E1AB8B8580034ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = liveContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5ED0BD801AB8B8580034ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = liveContentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liveContent.app/liveContent";
+			};
+			name = Debug;
+		};
+		5ED0BD811AB8B8580034ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = liveContentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liveContent.app/liveContent";
+			};
+			name = Release;
+		};
+		5ED0BDA31AB8B8670034ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = liveContent_WatchKit_Extension;
+				INFOPLIST_FILE = "liveContent WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5ED0BDA41AB8B8670034ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = liveContent_WatchKit_Extension;
+				INFOPLIST_FILE = "liveContent WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5ED0BDA61AB8B8670034ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "liveContent WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5ED0BDA71AB8B8670034ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "liveContent WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ED0BD581AB8B8580034ABE4 /* Build configuration list for PBXProject "liveContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED0BD7A1AB8B8580034ABE4 /* Debug */,
+				5ED0BD7B1AB8B8580034ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ED0BD7C1AB8B8580034ABE4 /* Build configuration list for PBXNativeTarget "liveContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED0BD7D1AB8B8580034ABE4 /* Debug */,
+				5ED0BD7E1AB8B8580034ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ED0BD7F1AB8B8580034ABE4 /* Build configuration list for PBXNativeTarget "liveContentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED0BD801AB8B8580034ABE4 /* Debug */,
+				5ED0BD811AB8B8580034ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ED0BDA21AB8B8670034ABE4 /* Build configuration list for PBXNativeTarget "liveContent WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED0BDA31AB8B8670034ABE4 /* Debug */,
+				5ED0BDA41AB8B8670034ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5ED0BDA51AB8B8670034ABE4 /* Build configuration list for PBXNativeTarget "liveContent WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED0BDA61AB8B8670034ABE4 /* Debug */,
+				5ED0BDA71AB8B8670034ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ED0BD551AB8B8580034ABE4 /* Project object */;
+}
